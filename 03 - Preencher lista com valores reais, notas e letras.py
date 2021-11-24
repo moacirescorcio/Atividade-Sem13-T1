@@ -14,7 +14,9 @@ print(lista1)
 
 #Letra b
 if n == 0:
+    print(lista2)
     print('SEM NOTAS')
+    
 else:
     for j in range (n):
         j = float(input())
@@ -29,9 +31,9 @@ for k in range(n):
 
 qtd = 0
 for a in lista4:
-    if ('aeiou') in a:
+    if a in 'AaEeIiOoUu':
         qtd += 1
-    elif ('qwrtypsdfghjklzxcvbnm') in a:
+    else:
         lista5.append(a)
 
 print(qtd)
